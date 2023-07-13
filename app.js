@@ -47,7 +47,7 @@ btn3.addEventListener("click", function(){
     }
 });
 
-btn1.addEventListener("click", function(){
+btn4.addEventListener("click", function(){
     if(tg.MainButton.isVisible){
         tg.MainButton.hide();
     }
@@ -58,7 +58,7 @@ btn1.addEventListener("click", function(){
     }
 });
 
-btn1.addEventListener("click", function(){
+btn5.addEventListener("click", function(){
     if(tg.MainButton.isVisible){
         tg.MainButton.hide();
     }
@@ -69,7 +69,7 @@ btn1.addEventListener("click", function(){
     }
 });
 
-btn1.addEventListener("click", function(){
+btn6.addEventListener("click", function(){
     if(tg.MainButton.isVisible){
         tg.MainButton.hide();
     }
@@ -87,7 +87,6 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 let usercard = document.getElementById("usercard");
 
 let p = document.createElement("p")
-p.innerText = `${tg.initDataUnsafe.first_name}`
-`${tg.initDataUnsafe.last_name}`;
+p.innerText = `${tg.initDataUnsafe.first_name} ${tg.initDataUnsafe.last_name}`;
 
 usercard.appendChild(p);
